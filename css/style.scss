@@ -1,0 +1,526 @@
+@charset "UTF-8";
+
+html,body{
+  -webkit-text-size-adjust: 100%;
+  font-size: 100%;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Yu Gothic Medium;
+  line-height: 1.7;
+}
+
+// トップページ
+.home{
+  background-image: url(../image/camera.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  .home-content{
+    text-align: right;
+    color: white;
+    padding-top: 15%;
+    padding-right: 200px;
+    p{
+      margin-right: 230px;
+    }
+    h1{
+      font-size: 3rem;
+    }
+    img{
+      width: 18%;
+      margin-top: 100px;
+      margin-right: 100px;
+    }
+  }
+}
+
+// トップページ終わり
+
+// 説明箇所
+.description{
+
+  h1{
+    text-align: center;
+  }
+  img{
+    width: 500px;
+  }
+  .each-description{
+    display: flex;
+    justify-content: space-around;
+    .sumaho{
+      margin-left: 250px;
+    }
+  }
+  .sasie{
+    width: 80px;
+    height: 80px;
+    border-radius:50%
+  }
+}
+
+.sumaho,.gift{
+  a{
+    text-decoration: none;
+    color: black;
+    :hover{
+      color: gray;
+    }
+  }
+  div{
+    float: left;
+    margin-right: 100px;
+    p{
+      text-align: center;
+      margin-top: 4px;
+    }
+  }
+}
+// 説明箇所終わり
+
+// 選べるカレンダー
+.calendar{
+  overflow: hidden;
+  background-color: rgb(219, 215, 215);
+  .read{
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 30px;
+  }
+  .grid{
+    display: grid;
+    text-align: center;
+    grid-template-rows: 400px 400px ;
+    grid-template-columns: 300px 400px 200px 400px;
+    img{
+      width: 90%;
+    }
+    p{
+      font-weight: bold;
+    }
+    .stand{
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+    }
+    .hon{
+      grid-row: 1 / 2;
+      grid-column: 4 / 5;
+    }
+    .A4{
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+    }
+    .bord{
+      grid-row: 2 / 3;
+      grid-column: 4 / 5;
+    }
+  }
+  .three-way{
+    display: flex;
+    justify-content: center;
+    .kakaku{
+      margin: 0 100px;
+      h2,p{
+        text-align: center;
+      }
+      .nedan{
+        padding-left: 60px;
+      }
+      .nedan1{
+        padding-left: 43px;
+      }
+      .nedan2{
+        padding-left: 110px;
+      }
+    }
+    .souryo{
+      margin-right:100px;
+      h2,p{
+        text-align: center;
+      }
+      .haitatu{
+        padding: 20px 40px;
+      }
+    }
+    .meyasu{
+      h2,p,h4{
+        text-align: center;
+      }
+      .otodoke{
+        border: 2px solid orange;
+      }
+      .card{
+        text-align: center;
+      }
+    }
+  }
+}
+// 選べるカレンダー終わり
+
+// ギフトと一緒に
+.six-grid{
+  background-color: rgb(201, 170, 33);
+  .read{
+    text-align: center;
+    padding-top: 30px;
+  }
+  .grid{
+    display: grid;
+    grid-template-rows: 250px 300px  ;
+    grid-template-columns: 15% 25% 25% 25% ;
+    img{
+      width: 95%;
+    }
+    .cake{
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+    }
+    .flower{
+      grid-row: 1 / 2;
+      grid-column: 3 / 4;
+    }
+    .umi{
+      grid-row: 1 / 2;
+      grid-column: 4 / 5;
+    }
+    .tea{
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+    }
+    .kussyon{
+      grid-row: 2 / 3;
+      grid-column: 3 / 4;
+    }
+    .present{
+      grid-row: 2 / 3;
+      grid-column: 4 / 5;
+    }
+  }
+}
+// ギフトと一緒に終わり
+
+// お世話になっている人へ
+.catch{
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 100px;
+}
+
+.catchcopy{
+  text-align: center;
+  .send{
+    font-size: 20px;
+    font-weight: lighter;
+  }
+}
+// お世話になっている人へ終わり
+
+// フッター
+.footer{
+  background-color: rgb(219, 215, 215);
+  .read,h3{
+    text-align: center;
+    padding-top: 10px;
+  }
+  .footerlink{
+    display: flex;
+    justify-content: center;
+    .logo{
+      p{
+        text-align: center;
+        margin-bottom: 0;
+      }
+      h1{
+        margin-top: 0;
+      }
+    }
+
+    .sns{
+      width: 370px;
+      margin: auto 80px 70px;
+      padding-left: 60px;
+      img{
+        width: 50%;
+      }
+      .fab{
+        padding-right: 10px;
+      }
+      .fas{
+        padding: 0 10px;
+      }
+    }
+    .policy{
+      li{
+        list-style: none;
+      }
+    }
+  }
+  .copyright{
+    text-align: center;
+  }
+}
+// フッター終わり
+
+/*---Media Queries --*/
+@media (max-width: 768px) {
+  // トップページ
+  .home{
+    .home-content{
+      padding-top: 230px;
+      padding-right: 170px;
+      img{
+        width:200px;
+        margin-top: 50px;
+        margin-right: 100px;
+      }
+    }
+  }
+
+  // 説明箇所
+  .description{
+    .each-description{
+      display: block;
+      .sumaho,.gift{
+        text-align: center;
+        margin-left: 0px;
+        padding-top: 20px;
+        div{
+          margin-right: 70px;
+        }
+      }
+    }
+  }
+  .radius{
+    padding-left: 190px;
+  }
+
+  // 選べるカレンダー
+  .calendar{
+    .grid{
+      grid-template-rows: 25% 25% 25% 25%;
+      grid-template-columns: 20% 60% 20% ;
+      .stand{
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+      }
+      .hon{
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+      }
+      .A4{
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+      }
+      .bord{
+        grid-row: 4 / 5;
+        grid-column: 2 / 3;
+      }
+    }
+    .three-way{
+      display: block;
+      .kakaku{
+        margin-bottom: 70px;
+        h4{
+          text-align: center;
+        }
+        hr{
+          width: 400px;
+        }
+      }
+      .souryo{
+        margin-right:0;
+        margin-bottom: 70px;
+        .haitatu{
+          width: 300px;
+          padding: 20px 250px;
+        }
+      }
+      .meyasu{
+        padding-bottom: 70px;
+        .otodoke{
+          width: 450px;
+          margin-left: 160px;
+        }
+      }
+
+    }
+  }
+
+  // ギフトと一緒に
+  .six-grid{
+    .grid{
+      display: grid;
+      grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%  ;
+      grid-template-columns: 20% 60% 20% ;
+      img{
+        width: 100%;
+      }
+      .cake{
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+      }
+      .flower{
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+      }
+      .umi{
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+      }
+      .tea{
+        grid-row: 4 / 5;
+        grid-column: 2 / 3;
+      }
+      .kussyon{
+        grid-row: 5 / 6;
+        grid-column: 2 / 3;
+      }
+      .present{
+        grid-row: 6 / 7;
+        grid-column: 2 / 3;
+      }
+    }
+  }
+
+  // フッター
+  .footer{
+    .footerlink{
+      display: block;
+      .logo{
+        h1{
+          text-align: center;
+        }
+      }
+  
+      .sns{
+        width: 370px;
+        margin: auto 80px 10px;
+        padding-left: 210px;
+        img{
+          width: 50%;
+        }
+        .fab{
+          padding-right: 10px;
+        }
+        .fas{
+          padding: 0 10px;
+        }
+      }
+      .policy{
+        margin: 50px auto;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  // トップページ
+  .home{
+    .home-content{
+      text-align: center;
+      padding-top: 70%;
+      padding-right: 0;
+      p{
+        margin-right: 0px;
+      }
+      h1{
+        font-size: 2.5rem;
+      }
+      img{
+        width: 50%;
+        margin-top: 0px;
+        margin-right: 0px;
+      }
+    }
+  }
+
+    // 説明箇所
+    .description{
+      overflow: hidden;
+      padding-bottom: 50px;
+      h1{
+        font-size: 1.5rem;
+        padding-top: 50px;
+      }
+      img{
+        width: 300px;
+      }
+      .each-description{
+        .sumaho,.gift{
+          text-align: center;
+          margin-left: 0px;
+          padding-top: 20px;
+          div{
+            margin-right: 70px;
+          }
+        }
+      }
+    }
+    .radius{
+      padding-left: 160px;
+    }
+
+      // 選べるカレンダー
+    .calendar{
+      overflow: hidden;
+      .read{
+        font-size: 0.6rem;
+        text-align: center;
+        margin-top: 0px;
+        padding-top: 30px;
+      }
+      .three-way{
+        .kakaku{
+          p{
+            font-size: 13px;
+          }
+          hr{
+            width: 200px;
+          }
+        }
+        .souryo{
+          .haitatu{
+            width: 300px;
+            padding: 20px 40px;
+          }
+        }
+        .meyasu{
+          .otodoke{
+            font-size: 0.7rem;
+            width: 300px;
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+
+    // お世話になっている人へ
+    .catchcopy{
+      h2{
+        font-size: 0.9rem;
+      }
+    }
+
+      // フッター
+  .footer{
+    overflow: hidden;
+    .footerlink{
+      .sns{
+        width: 340px;
+        margin: auto 30px 10px;
+        padding-left: 0px;
+        .image{
+          padding-left: 100px;
+          width: 250px;
+        }
+
+      }
+      
+    }
+  }
+}
